@@ -7,14 +7,15 @@ import (
 )
 
 type Article struct {
-	ID        int64     `json:"id" gorm:"primaryKey"`
-	Title     *string   `json:"title"`
-	Content   string    `json:"content"`
-	AuthorID  int64     `json:"author_id"`
-	Author    Author    `json:"author"`
-	UpdatedAt time.Time `json:"updated_at"`
-	CreatedAt time.Time `json:"created_at"`
-	DeletedAt gorm.DeletedAt
+	ID                 int64               `json:"id" gorm:"primaryKey"`
+	Title              *string             `json:"title"`
+	Content            string              `json:"content"`
+	AuthorID           int64               `json:"author_id"`
+	Author             Author              `json:"author"`
+	ArticleAttachments []ArticleAttachment `gorm:"foreignKey:ArticleID" json:"article_attachments"`
+	UpdatedAt          time.Time           `json:"updated_at"`
+	CreatedAt          time.Time           `json:"created_at"`
+	DeletedAt          gorm.DeletedAt
 }
 
 func (b *Article) TableName() string {

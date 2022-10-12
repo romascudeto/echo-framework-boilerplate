@@ -9,7 +9,7 @@ import (
 
 func Fetch(articles *[]models.Article) (err error) {
 
-	if err = Config.DB.Debug().Preload("Author").Find(articles).Error; err != nil {
+	if err = Config.DB.Debug().Preload("Author").Preload("ArticleAttachments").Find(articles).Error; err != nil {
 		return err
 	}
 	return nil
@@ -17,7 +17,7 @@ func Fetch(articles *[]models.Article) (err error) {
 
 func Detail(article *models.Article, id int32) (err error) {
 
-	if err = Config.DB.Preload("Author").Where("id = ?", id).First(article).Error; err != nil {
+	if err = Config.DB.Preload("Author").Preload("ArticleAttachments").Where("id = ?", id).First(article).Error; err != nil {
 		return err
 	}
 	return nil

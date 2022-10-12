@@ -1,13 +1,12 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
-	"io/ioutil"
-
 	"echo-framework/article"
 	"echo-framework/author"
 	Config "echo-framework/config"
+	"encoding/json"
+	"fmt"
+	"log"
 
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
@@ -27,6 +26,6 @@ func main() {
 	article.Routes(e)
 	author.Routes(e)
 	data, _ := json.MarshalIndent(e.Routes(), "", "  ")
-	ioutil.WriteFile("routes.json", data, 0644)
+	log.Println(string(data))
 	e.Logger.Fatal(e.Start(":1323"))
 }

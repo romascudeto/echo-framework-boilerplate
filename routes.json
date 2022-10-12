@@ -5,92 +5,27 @@
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
   {
-    "method": "REPORT",
-    "path": "/article",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
     "method": "HEAD",
     "path": "/article/*",
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
   {
-    "method": "PUT",
-    "path": "/article/*",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
     "method": "REPORT",
     "path": "/article/*",
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
   {
-    "method": "POST",
-    "path": "/author/login",
-    "name": "echo-framework/author/controllers.LoginAuthor"
-  },
-  {
-    "method": "CONNECT",
+    "method": "DELETE",
     "path": "/article",
-    "name": "github.com/labstack/echo/v4.glob..func1"
+    "name": "echo-framework/article/controllers.DeleteArticle"
   },
   {
-    "method": "POST",
-    "path": "/article",
-    "name": "echo-framework/article/controllers.CreateArticle"
-  },
-  {
-    "method": "POST",
+    "method": "DELETE",
     "path": "/article/*",
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
   {
-    "method": "PATCH",
-    "path": "/article",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "TRACE",
-    "path": "/article",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "GET",
-    "path": "/article/*",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "GET",
-    "path": "/article",
-    "name": "echo-framework/article/controllers.GetListArticle"
-  },
-  {
-    "method": "PROPFIND",
-    "path": "/article/*",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "TRACE",
-    "path": "/article/*",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "GET",
-    "path": "/author/:id",
-    "name": "echo-framework/author/controllers.GetAuthorByID"
-  },
-  {
-    "method": "OPTIONS",
-    "path": "/article",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "OPTIONS",
-    "path": "/article/*",
-    "name": "github.com/labstack/echo/v4.glob..func1"
-  },
-  {
-    "method": "PATCH",
+    "method": "PUT",
     "path": "/article/*",
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
@@ -100,14 +35,29 @@
     "name": "echo-framework/author/controllers.GetListAuthor"
   },
   {
-    "method": "POST",
-    "path": "/author",
-    "name": "echo-framework/author/controllers.CreateAuthor"
+    "method": "GET",
+    "path": "/author/:id",
+    "name": "echo-framework/author/controllers.GetAuthorByID"
   },
   {
-    "method": "DELETE",
-    "path": "/author",
-    "name": "echo-framework/author/controllers.DeleteAuthor"
+    "method": "HEAD",
+    "path": "/article",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/article/*",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/article/*",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "GET",
+    "path": "/article/:id",
+    "name": "echo-framework/article/controllers.GetArticleByID"
   },
   {
     "method": "CONNECT",
@@ -115,19 +65,19 @@
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
   {
-    "method": "PUT",
-    "path": "/author",
-    "name": "echo-framework/author/controllers.UpdateAuthor"
-  },
-  {
-    "method": "DELETE",
-    "path": "/article",
-    "name": "echo-framework/article/controllers.DeleteArticle"
-  },
-  {
-    "method": "HEAD",
-    "path": "/article",
+    "method": "GET",
+    "path": "/article/*",
     "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/article/*",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "POST",
+    "path": "/author",
+    "name": "echo-framework/author/controllers.CreateAuthor"
   },
   {
     "method": "PUT",
@@ -136,12 +86,62 @@
   },
   {
     "method": "DELETE",
+    "path": "/author",
+    "name": "echo-framework/author/controllers.DeleteAuthor"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/article",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/article",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "POST",
+    "path": "/article",
+    "name": "echo-framework/article/controllers.CreateArticle"
+  },
+  {
+    "method": "PUT",
+    "path": "/author",
+    "name": "echo-framework/author/controllers.UpdateAuthor"
+  },
+  {
+    "method": "GET",
+    "path": "/article",
+    "name": "echo-framework/article/controllers.GetListArticle"
+  },
+  {
+    "method": "TRACE",
+    "path": "/article",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "REPORT",
+    "path": "/article",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/article",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "OPTIONS",
     "path": "/article/*",
     "name": "github.com/labstack/echo/v4.glob..func1"
   },
   {
-    "method": "GET",
-    "path": "/article/:id",
-    "name": "echo-framework/article/controllers.GetArticleByID"
+    "method": "POST",
+    "path": "/article/*",
+    "name": "github.com/labstack/echo/v4.glob..func1"
+  },
+  {
+    "method": "POST",
+    "path": "/author/login",
+    "name": "echo-framework/author/controllers.LoginAuthor"
   }
 ]
